@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>staff-schedule | eco's cut</title>
+    <link rel="stylesheet" href="stylesheet.css" />
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <img
+          class="header-logo"
+          src="https://www.eco-cut.jp/assets/images/logo/logo.svg"
+          alt="eco's cut"
+        />
+      </div>
+      <nav class="breadcrumb">
+        <a href="https://www.eco-cut.jp/">ホーム</a>
+        <span>></span>
+        <span>出勤情報</span>
+      </nav>
+    </header>
+
+    <section class="section-title">
+      <h1 class="section-logo">出勤情報</h1>
+    </section>
+    <div class="shift-p">
+      <p>
+        ※スタッフの体調、交通状況、または混雑状況により、急遽シフトが変更になる場合がございます。あらかじめご了承ください。
+      </p>
+    </div>
+    <div style="margin: 36px 0">
+      <button onclick="changeMonth(-1)">← 前月</button>
+      <span id="currentMonth"></span>
+      <button onclick="changeMonth(1)">次月 →</button>
+    </div>
+
+    <h2 class="shop-title">大山店</h2>
+    <div class="table-wrapper">
+      <table id="oyama"></table>
+    </div>
+
+    <h2 class="shop-title">学芸大学店</h2>
+    <div class="table-wrapper">
+      <table id="gakugei"></table>
+    </div>
+
+    <script src="shift.js"></script>
+  </body>
+</html>
